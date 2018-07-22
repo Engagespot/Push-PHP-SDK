@@ -1,0 +1,13 @@
+{
+    "name": "engagespot/php-sdk",
+    "description": "PHP SDK for Engagespot web push notifications",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Anand S",
+            "email": "anand@engagespot.co"
+        }
+    ],
+    "require": {}
+}
