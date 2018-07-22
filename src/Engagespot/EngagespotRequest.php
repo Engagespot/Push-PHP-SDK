@@ -45,9 +45,6 @@ class EngagespotRequest
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-
-            print_r(self::$body);
-            die();
             
             $server_output = curl_exec($ch);
 
@@ -55,7 +52,6 @@ class EngagespotRequest
 
             $json = json_decode($server_output,true);
 
-            echo $json;
 
             if($json['status'] == 'ok'){
                 return true;
