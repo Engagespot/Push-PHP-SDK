@@ -7,7 +7,13 @@ PHP wrapper for Engagespot API V2.
 
 ### Installation
 
-To load this SDK to your PHP project, use the autoload script
+Via Composer
+
+```sh
+composer require engagespot/engagespot-php-sdk
+```
+
+If you donot want to use composer, you can load the autoload.php file directly.
 
 ```sh
 require '/path/to/autoload.php';
