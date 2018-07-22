@@ -20,7 +20,7 @@ class EngagespotRequest
 
     private static $endPoint;
 
-    private static $apiVersion = '1';
+    private static $apiVersion = '2';
 
     public static function setBody($data){
         self::$body = $data;
@@ -38,22 +38,24 @@ class EngagespotRequest
 
             $ch = curl_init();
 
-            curl_setopt($ch,CURLOPT_HTTPHEADER,array("Api-Key: $key"));
+            curl_setopt($ch,CURLOPT_HTTPHEADER,array("Content-Type: application/json","Api-Key: $key"));
             curl_setopt($ch, CURLOPT_URL, self::$serverUrl . '/' .self::$apiVersion.'/'. self::$endPoint);
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, self::$body);
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-            /*
+
             print_r(self::$body);
             die();
-            */
+            
             $server_output = curl_exec($ch);
 
             curl_close($ch);
 
             $json = json_decode($server_output,true);
+
+            echo $json;
 
             if($json['status'] == 'ok'){
                 return true;

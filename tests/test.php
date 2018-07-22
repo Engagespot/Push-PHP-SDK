@@ -11,16 +11,13 @@ require '../autoload.php';
 use \Engagespot\EngagespotPush;
 
 
-EngagespotPush::initialize('gfs67evgd287ebdvhs','gfs67evgd287ebdvhs');
+EngagespotPush::initialize('SITEKEY','APIKEY');
 
-$data = ["title" => "From SDK", "message" => "This is from SDK!", "link" => "http://google.com", "icon" => "http://engagespot.co/sqladmin/themes/pmahomme/img/logo_left.png"];
+$data = ["campaignName" => 'Hello', "title" => "From SDK", "message" => "This is from SDK!", "link" => "http://google.com", "icon" => "http://engagespot.co/blog/wp-content/uploads/2017/02/wpengage.jpg"];
 
 EngagespotPush::setMessage($data);
 
-//EngagespotPush::addMappingIds(array('firefox','anandu'));
+EngagespotPush::addIdentifiers(array('identifier'));
 
-if(EngagespotPush::isPushSubscribed()){
-    echo "yes";
     
     EngagespotPush::send();
-}
