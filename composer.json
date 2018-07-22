@@ -9,5 +9,10 @@
             "email": "anand@engagespot.co"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Engagespot": "src"
+        }
+    }
 }
