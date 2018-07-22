@@ -9,7 +9,6 @@
             "email": "anand@engagespot.co"
         }
     ],
-    "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "psr-4": {
