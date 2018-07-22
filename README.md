@@ -17,7 +17,12 @@ If you donot want to use composer, you can load the autoload.php file directly.
 
 ```sh
 require '/path/to/autoload.php';
+```
 
+Use the EngagespotPush Class from Engagespot namespace.
+Initialize the SDK using your SITE_KEY and API_KEY.
+
+```
 use \Engagespot\EngagespotPush;
 
 EngagespotPush::initialize('SITE_KEY','API_KEY');
