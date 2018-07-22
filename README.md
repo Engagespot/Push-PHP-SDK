@@ -7,6 +7,10 @@ PHP wrapper for Engagespot API V2.
 
 ### Installation
 
+First, you have to get your Site Key and API Key by creating a free web push notification account from Engagespot. You can create your free web push notification account here - https://app.engagespot.co/register
+
+After that, follow the instructions below.
+
 Via Composer
 
 ```sh
