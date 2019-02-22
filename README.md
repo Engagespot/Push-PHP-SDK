@@ -1,6 +1,8 @@
 # Engagespot PHP SDK V2
 
-PHP wrapper for Engagespot API V2.
+Engagespot helps you to add push notification functionality to your PHP web application (Supports Core PHP as well as frameworks including Laravel, Yii, Symphony etc). Before using this SDK, you need to create a free account at https://app.engagespot.co/register
+
+Add push notifications to your web app in less than 10 mins!
 
 ### Version
 2.0
