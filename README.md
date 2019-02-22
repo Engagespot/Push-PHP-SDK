@@ -61,7 +61,7 @@ If you want to send notification selected identifiers (that you have already map
 ```sh
 <?php
 
-Engagespot::addIdentifiers(array("id1", "id2"));
+EngagespotPush::addIdentifiers(array("id1", "id2"));
 
 ?>
 ```
