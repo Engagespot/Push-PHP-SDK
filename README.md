@@ -29,6 +29,7 @@ require '/path/to/autoload.php';
 
 Use the EngagespotPush Class from Engagespot namespace.
 Initialize the SDK using your SITE_KEY and API_KEY.
+You can find your keys on your Engagespot Dashboard -> Website Settings.
 
 ```
 use \Engagespot\EngagespotPush;
