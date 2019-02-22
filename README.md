@@ -1,5 +1,7 @@
 # Engagespot PHP SDK V2
 
+Easiest way to implement user-specific web push notifications in PHP.
+
 Engagespot helps you to add push notification functionality to your PHP web application (Supports Core PHP as well as frameworks including Laravel, Yii, Symphony etc). Before using this SDK, you need to create a free account at https://app.engagespot.co/register
 
 Add push notifications to your web app in less than 10 mins!
