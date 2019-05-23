@@ -42,6 +42,8 @@ class EngagespotRequest
             curl_setopt($ch, CURLOPT_URL, self::$serverUrl . '/' .self::$apiVersion.'/'. self::$endPoint);
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, self::$body);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
@@ -74,6 +76,8 @@ class EngagespotRequest
             curl_setopt($ch, CURLOPT_URL, self::$internalAPIUrl.'/'.self::$endPoint);
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, self::$body);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
